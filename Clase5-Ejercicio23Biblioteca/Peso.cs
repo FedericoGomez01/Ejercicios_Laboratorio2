@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clase4_MonedasClases
+namespace Clase5_Ejercicio23Biblioteca
 {
     public class Peso
     {
@@ -27,6 +27,11 @@ namespace Clase4_MonedasClases
         {
             Peso.cotizRespectoDolar = cotizacion;
         }
+        public static void setCotizaicon(double cotizacion)
+        {
+            Peso.cotizRespectoDolar = cotizacion;
+
+        }
         public double GetCantidad
         {
             get
@@ -42,7 +47,7 @@ namespace Clase4_MonedasClases
                 return Peso.cotizRespectoDolar;
             }
         }
-         
+
         //Sobrecargas implicitas
         public static implicit operator Peso(double p)
         {
@@ -57,17 +62,17 @@ namespace Clase4_MonedasClases
 
         public static explicit operator Euro(Peso p)
         {
-            return  (Euro)((Dolar)p);
+            return (Euro)((Dolar)p);
         }
 
         //sobrecargas de operadores  
-        public static bool operator == (Peso p1, Peso p2)
+        public static bool operator ==(Peso p1, Peso p2)
         {
             return (p1.GetCantidad == p2.GetCantidad);
         }
         public static bool operator !=(Peso p1, Peso p2)
         {
-            return !(p1== p2);
+            return !(p1 == p2);
         }
 
         public static bool operator ==(Peso p, Dolar d)
@@ -86,7 +91,7 @@ namespace Clase4_MonedasClases
 
         public static bool operator !=(Peso p, Euro e)
         {
-            return !(p== e);
+            return !(p == e);
         }
 
         public static Peso operator -(Peso p, Dolar d)
@@ -108,7 +113,6 @@ namespace Clase4_MonedasClases
         {
             return new Peso(p.GetCantidad + ((Peso)e).GetCantidad);
         }
-
 
     }
 }

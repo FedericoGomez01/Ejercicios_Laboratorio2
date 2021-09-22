@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Clase7_Ejercicio32</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clase7-Ejercicio32Bibliotecas\Clase7-Ejercicio32Bibliotecas.csproj" />
+  </ItemGroup>
+
+</Project>
