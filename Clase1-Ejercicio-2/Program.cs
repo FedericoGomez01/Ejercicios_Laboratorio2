@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Clase1_Ejercicio_2
 {
@@ -11,7 +12,7 @@ namespace Clase1_Ejercicio_2
             Se debe validar que el número sea mayor que cero, caso contrario, 
             mostrar el mensaje: "ERROR. ¡Reingresar número!".Nota: Utilizar el método
             ‘Pow’ de la clase Math para realizar la operación.
-             */
+            */
             int numeroIngresado;
             double cuadradoNumero;
             double cuboNumero;
@@ -33,6 +34,9 @@ namespace Clase1_Ejercicio_2
             }
 
 
+
+
         }
     }
+
 }

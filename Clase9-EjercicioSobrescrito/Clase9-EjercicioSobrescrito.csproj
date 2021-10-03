@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Clase9_EjercicioSobrescrito</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clase9-SobrescritoBiblioteca\Clase9-SobrescritoBiblioteca.csproj" />
+  </ItemGroup>
+
+</Project>
